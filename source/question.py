@@ -1,6 +1,8 @@
 import pandas as pd
 from typing import List
 import string
+import json
+import random
 
 
 def get_df() -> pd.DataFrame:
@@ -61,3 +63,127 @@ def get_QA_pairs(
         qa_pairs.append(sampled_pairs)
 
     return qa_pairs
+
+
+def read_json_to_list_of_dicts():
+    """
+    Reads a JSON file containing structured data and returns it as a list of dictionaries.
+
+    The JSON file should contain a list of records, where each record is a dictionary
+    with keys like 'domain', 'business_requirements', 'technical_requirements', 'question',
+    'model_answer', and 'basic_feedback'.
+
+    Parameters:
+    file_path (str): The path to the JSON file that needs to be read.
+
+    Returns:
+    list: A list of dictionaries, each dictionary representing a data record from the JSON file.
+
+    Example:
+    >>> file_path = 'data.json'
+    >>> data_records = read_json_to_list_of_dicts(file_path)
+    >>> for record in data_records:
+    >>>     print(record)
+    """
+    print("Reading Database of Case Study Objects...")
+    # Open and load the JSON file
+    with open("CS_usecases.json", "r") as file:
+        data_records = json.load(file)
+
+    return data_records
+
+
+def sample_data_elements(
+    json_file_path="CS_usecases.json", domains=None, sample_size=1
+):
+    """
+    Samples data elements from a JSON file, optionally filtered by domain, with a specified sample size per domain.
+
+    Parameters:
+    json_file_path (str): Path to the JSON file.
+    domains (list, optional): List of domains to consider for sampling. If None, all domains are considered.
+    sample_size (int): Number of samples to take per domain.
+
+    Returns:
+    list: A list of sampled data elements, sorted by domain.
+    """
+    try:
+        # Load the JSON data
+        with open(json_file_path, "r") as file:
+            data = json.load(file)
+
+        # Filter data by the provided domain list
+        filtered_data = [
+            record for record in data if domains is None or record["domain"] in domains
+        ]
+
+        # Group data by domain
+        data_by_domain = {}
+        for record in filtered_data:
+            domain = record["domain"]
+            data_by_domain.setdefault(domain, []).append(record)
+
+        # Sample data elements per domain
+        sampled_data = []
+        for domain, records in data_by_domain.items():
+            sampled_data.extend(random.sample(records, min(sample_size, len(records))))
+
+        # Sort the sampled data by domain
+        sampled_data.sort(key=lambda x: x["domain"])
+
+        return sampled_data
+
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        return []
+
+
+def sample_data_by_requirements(
+    json_file_path="CS_usecases.json",
+    business_reqs=None,
+    technical_reqs=None,
+    sample_size=1,
+):
+    """
+    Samples data elements from a JSON file based on business and technical requirements.
+
+    Parameters:
+    json_file_path (str): Path to the JSON file.
+    business_reqs (list, optional): List of business requirements to consider for sampling. If None, all are considered.
+    technical_reqs (list, optional): List of technical requirements to consider for sampling. If None, all are considered.
+    sample_size (int): Number of samples to take.
+
+    Returns:
+    list: A list of sampled data elements.
+    """
+    try:
+        # Load the JSON data
+        with open(json_file_path, "r") as file:
+            data = json.load(file)
+
+        # Filter data based on the provided business and technical requirements
+        filtered_data = [
+            record
+            for record in data
+            if (
+                business_reqs is None
+                or any(req in record["business_requirements"] for req in business_reqs)
+            )
+            and (
+                technical_reqs is None
+                or any(
+                    req in record["technical_requirements"] for req in technical_reqs
+                )
+            )
+        ]
+
+        # Randomly sample the specified number of elements from the filtered data
+        sampled_data = random.sample(
+            filtered_data, min(sample_size, len(filtered_data))
+        )
+
+        return sampled_data
+
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        return []

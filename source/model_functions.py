@@ -108,3 +108,53 @@ def create_cs_prompt(
     """
 
     return prompt
+
+
+def create_bq_prompt(
+    question: str,
+    response: str,
+    expected_elements: str,
+    feedback: str,
+    user_answer: str = "Couldn't Answer",
+) -> str:
+    """
+    Creates a detailed prompt for language model feedback analysis based on a Behavioural Question Data Object and user response.
+
+    Parameters:
+    question (str): The question to be analyzed.
+    response (str): The model correct answer to the question.
+    expected_elements (str): The expected ideas to be discussed in the response.
+    feedback (str): The expected basic feedback for the model answer.
+    user_answer (str): The user's response to the question. Default is a placeholder text.
+
+    Returns:
+    str: A detailed prompt for feedback analysis.
+    """
+
+    prompt = f"""
+    Act an Expert Data Analyst Interview Preparation Assistant
+
+    The following is a Behavioural Question provided to a potential Data Analyst Candidate:
+
+    Question: {question}
+    Expected Elements: {expected_elements} -> These are the ideas/topics that need to be present directly or indirectly to answer correctly.
+
+    Simplified Example of a Correct Answer: {response}
+    Simplified Example Feedback for correct answer: {feedback}
+
+    User's Answer: {user_answer}
+
+    Evaluate the user's response to the behavioural question given the context of the Behavioural Question's expected elements.
+    Incase the user couldn't answer, act motivational and start you response with "Let me help you understand this " and then provide a step by step explaination of the solution for the user to understant you thought process.
+
+    Please analyze the user's answer in comparison to the correct answer. Highlight any 
+    inaccuracies, misunderstandings, or areas of improvement in the user's response. Provide constructive 
+    feedback and suggestions on how the user can deepen their understanding of the topic and improve their 
+    approach to answering similar questions. You have to make sure that the user understands what a Data Analyst Interviewer is actually looking for in each question's response.
+
+    Strictly follow the following Feedback Structure:
+    Is the answer Poor/Mediocre/Good
+    How is the answer Poor/Mediocre/Good
+    """
+
+    return prompt

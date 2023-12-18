@@ -1,0 +1,259 @@
+[
+  {
+    "id": 1,
+    "question": "Describe a challenging situation you faced in a team project. How did you handle it?",
+    "response": "During a software development project, we faced conflicting ideas within the team. I facilitated a team meeting, encouraged open communication, and we collectively found a compromise that addressed everyone's concerns.",
+    "expected_elements": [
+      "situation",
+      "challenges",
+      "actions taken",
+      "outcome"
+    ],
+    "feedback": "Great! You provided a detailed response covering the situation, the challenges faced, the actions you took, and the outcome. Well done!"
+  },
+  {
+    "id": 2,
+    "question": "Tell me about a time when you had to meet a tight deadline. How did you manage your time and resources?",
+    "response": "In my previous role, we had a tight deadline for a client deliverable. I organized tasks, created a detailed timeline, and collaborated with team members to allocate resources efficiently, ensuring we met the deadline successfully.",
+    "expected_elements": [
+      "tight deadline",
+      "time management",
+      "resource allocation",
+      "outcome"
+    ],
+    "feedback": "Excellent! Your response covers the key elements – the tight deadline, your approach to time management and resource allocation, and the successful outcome. Well articulated!"
+  },
+  {
+    "id": 3,
+    "question": "Describe a situation where you had to deal with a difficult team member. How did you handle it?",
+    "response": "I encountered a challenging team member who was resistant to collaboration. I initiated a one-on-one conversation, actively listened to their concerns, and worked together to find common ground. Building trust and understanding improved our teamwork.",
+    "expected_elements": [
+      "difficult team member",
+      "approach",
+      "communication",
+      "resolution"
+    ],
+    "feedback": "Impressive! You addressed the challenging team member by initiating a conversation, actively listening, and finding common ground. Your response demonstrates effective conflict resolution skills."
+  },
+  {
+    "id": 4,
+    "question": "Share an example of when you took the initiative to solve a problem without being asked. What was the outcome?",
+    "response": "In a project, I noticed a potential issue that hadn't been addressed. I proactively investigated the problem, proposed a solution to the team, and implemented it. This initiative resulted in preventing a future setback.",
+    "expected_elements": [
+      "initiative",
+      "problem identification",
+      "proposed solution",
+      "outcome"
+    ],
+    "feedback": "Well done! Your response highlights your initiative in identifying a problem, proposing a solution, and implementing it. Your proactive approach contributed to preventing a potential setback."
+  },
+  {
+    "id": 5,
+    "question": "Tell me about a time when you had to adapt to changes in a project. How did you approach it?",
+    "response": "In a software development project, there were sudden changes in client requirements. I quickly assessed the impact on the project timeline, communicated the changes to the team, and adapted our development plan to meet the new requirements.",
+    "expected_elements": [
+      "project changes",
+      "impact assessment",
+      "communication",
+      "adaptation"
+    ],
+    "feedback": "Excellent! Your response demonstrates your ability to adapt to changes in a project by assessing impact, communicating effectively, and adjusting the development plan. Well articulated!"
+  },
+  {
+    "id": 6,
+    "question": "Describe a situation where you successfully resolved a conflict within your team.",
+    "response": "During a project, disagreements arose among team members. I facilitated a constructive discussion, identified the root causes, and helped the team find common ground. The resolution strengthened team cohesion and improved collaboration.",
+    "expected_elements": [
+      "conflict resolution",
+      "facilitation",
+      "root causes",
+      "outcome"
+    ],
+    "feedback": "Impressive! You effectively resolved a conflict within your team by facilitating a constructive discussion, identifying root causes, and achieving a resolution. Your response showcases strong conflict resolution skills."
+  },
+  {
+    "id": 7,
+    "question": "Tell me about a time when you had to manage competing priorities. How did you prioritize and organize your tasks?",
+    "response": "In a role with multiple responsibilities, I encountered competing priorities. I prioritized tasks based on deadlines and impact, organized a task list, and communicated with stakeholders to manage expectations effectively.",
+    "expected_elements": [
+      "competing priorities",
+      "prioritization",
+      "organization",
+      "communication"
+    ],
+    "feedback": "Great job! Your response illustrates your ability to manage competing priorities by prioritizing tasks, organizing effectively, and maintaining clear communication with stakeholders. Well done!"
+  },
+  {
+    "id": 8,
+    "question": "Share an example of when you had to provide constructive feedback to a team member. How did you approach it?",
+    "response": "I observed areas for improvement in a team member's work. I scheduled a private meeting, highlighted their strengths, and provided specific, actionable feedback. The team member appreciated the feedback and made positive changes.",
+    "expected_elements": [
+      "constructive feedback",
+      "approach",
+      "highlighting strengths",
+      "outcome"
+    ],
+    "feedback": "Excellent! Your response demonstrates your ability to provide constructive feedback by approaching it with a private meeting, highlighting strengths, and achieving positive outcomes. Well articulated!"
+  },
+  {
+    "id": 9,
+    "question": "Describe a situation where you had to handle a dissatisfied client or customer. How did you address their concerns?",
+    "response": "In a client-facing role, I encountered a dissatisfied client. I listened empathetically to their concerns, acknowledged the issues, and proposed a detailed action plan to address and resolve their concerns. The client appreciated the proactive approach.",
+    "expected_elements": [
+      "dissatisfied client",
+      "empathetic listening",
+      "action plan",
+      "client satisfaction"
+    ],
+    "feedback": "Impressive! Your response showcases your ability to handle a dissatisfied client by listening empathetically, proposing a detailed action plan, and achieving client satisfaction. Well done!"
+  },
+  {
+    "id": 10,
+    "question": "Tell me about a time when you had to learn a new skill to meet a work-related challenge. What was the outcome?",
+    "response": "In a project, I needed to use a new programming language. I took online courses, practiced coding, and successfully applied the new skill to the project. This proactive learning approach enhanced my capabilities.",
+    "expected_elements": [
+      "learning new skill",
+      "approach",
+      "practice",
+      "outcome"
+    ],
+    "feedback": "Well done! Your response demonstrates your proactive approach to learning a new skill, including taking courses, practicing, and successfully applying the skill to the project. Excellent initiative!"
+  },
+  {
+    "id": 11,
+    "question": "Describe a situation where you had to lead a team through a challenging project. How did you motivate and guide your team?",
+    "response": "In a complex project, I took on a leadership role. I motivated the team by setting clear goals, providing continuous support, and fostering a collaborative environment. Regular check-ins ensured everyone stayed on track, and we successfully completed the project.",
+    "expected_elements": [
+      "leading a team",
+      "motivation",
+      "guidance",
+      "collaboration",
+      "check-ins",
+      "outcome"
+    ],
+    "feedback": "Outstanding! Your response provides a thorough understanding of how you led a team through a challenging project. Your focus on motivation, guidance, collaboration, and regular check-ins reflects strong leadership skills."
+  },
+  {
+    "id": 12,
+    "question": "Tell me about a time when you had to deal with ambiguity in a project. How did you navigate it?",
+    "response": "In a project with unclear requirements, I initiated a stakeholder meeting to gather more information. I clarified expectations, defined project scope collaboratively, and established a clear direction. This proactive approach mitigated ambiguity and ensured project success.",
+    "expected_elements": [
+      "dealing with ambiguity",
+      "initiative",
+      "clarification",
+      "collaboration",
+      "outcome"
+    ],
+    "feedback": "Impressive! Your response demonstrates your ability to handle ambiguity by taking initiative, clarifying expectations, collaborating with stakeholders, and achieving a successful project outcome. Well articulated!"
+  },
+  {
+    "id": 13,
+    "question": "Describe a situation where you had to meet the needs of a challenging client. How did you approach it?",
+    "response": "Working with a demanding client, I actively listened to their requirements, set realistic expectations, and provided regular updates. Through effective communication and managing expectations, we exceeded the client's expectations, resulting in a positive client relationship.",
+    "expected_elements": [
+      "challenging client",
+      "active listening",
+      "expectation setting",
+      "communication",
+      "client relationship",
+      "outcome"
+    ],
+    "feedback": "Excellent! Your response showcases your ability to meet the needs of a challenging client through active listening, expectation setting, effective communication, and building a positive client relationship. Well done!"
+  },
+  {
+    "id": 14,
+    "question": "Tell me about a time when you had to handle a setback or failure. How did you recover from it?",
+    "response": "In a project with unexpected challenges, I conducted a thorough analysis of the issues, identified areas for improvement, and implemented corrective actions. I communicated transparently with stakeholders, learned from the experience, and ensured future projects incorporated lessons learned.",
+    "expected_elements": [
+      "handling setbacks",
+      "analysis",
+      "corrective actions",
+      "communication",
+      "lessons learned",
+      "outcome"
+    ],
+    "feedback": "Great job! Your response demonstrates resilience in handling setbacks. Your thorough analysis, corrective actions, transparent communication, and learning from the experience are commendable. Well articulated!"
+  },
+  {
+    "id": 15,
+    "question": "Describe a time when you had to delegate tasks to achieve a project goal. How did you ensure effective delegation?",
+    "response": "In a project with tight deadlines, I delegated tasks based on team members' strengths and workload. I provided clear instructions, established checkpoints, and offered support when needed. This approach ensured efficient task completion and project success.",
+    "expected_elements": [
+      "delegating tasks",
+      "task assignment",
+      "clear instructions",
+      "checkpoints",
+      "support",
+      "outcome"
+    ],
+    "feedback": "Outstanding! Your response showcases effective delegation by considering team strengths, providing clear instructions, establishing checkpoints, and offering support. Your approach contributed to efficient task completion and project success."
+  },
+  {
+    "id": 16,
+    "question": "Tell me about a time when you had to collaborate with cross-functional teams. How did you ensure effective collaboration?",
+    "response": "In a cross-functional project, I initiated regular meetings to align goals, established clear communication channels, and defined roles and responsibilities. I fostered a collaborative environment, addressed challenges promptly, and ensured a cohesive approach. The project's success was a result of effective cross-functional collaboration.",
+    "expected_elements": [
+      "collaborating with cross-functional teams",
+      "goal alignment",
+      "communication",
+      "roles and responsibilities",
+      "addressing challenges",
+      "outcome"
+    ],
+    "feedback": "Impressive! Your response illustrates effective collaboration with cross-functional teams through goal alignment, clear communication, defined roles, addressing challenges, and ensuring a cohesive approach. Well done!"
+  },
+  {
+    "id": 17,
+    "question": "Describe a situation where you had to innovate or introduce a new approach to solve a problem. What was the outcome?",
+    "response": "In a project, I identified an opportunity for process improvement. I introduced a new approach, gathered feedback from the team, and iteratively refined the process. The innovative solution increased efficiency and received positive feedback from stakeholders.",
+    "expected_elements": [
+      "innovation",
+      "new approach",
+      "feedback gathering",
+      "process refinement",
+      "efficiency improvement",
+      "outcome"
+    ],
+    "feedback": "Excellent! Your response showcases your ability to innovate by identifying opportunities for improvement, introducing a new approach, gathering feedback, and iteratively refining the process. The increased efficiency and positive feedback from stakeholders highlight the success of your innovative solution. Well done!"
+  },
+  {
+    "id": 18,
+    "question": "Describe a situation where you had to handle a high-pressure or stressful environment. How did you cope with it?",
+    "response": "In a time-sensitive project, the team faced immense pressure. I maintained a calm demeanor, prioritized tasks based on urgency, and supported team members. My ability to stay focused under pressure contributed to the successful completion of the project.",
+    "expected_elements": [
+      "high-pressure environment",
+      "calm demeanor",
+      "task prioritization",
+      "team support",
+      "outcome"
+    ],
+    "feedback": "Great job! Your response demonstrates your ability to handle high-pressure environments by maintaining a calm demeanor, prioritizing tasks, and providing support to the team. Your focus under pressure contributed to project success. Well done!"
+  },
+  {
+    "id": 19,
+    "question": "Tell me about a time when you had to provide leadership in a crisis. How did you reassure your team and navigate the situation?",
+    "response": "During a crisis, I assumed a leadership role, communicated transparently with the team, and provided a clear action plan. I reassured the team by emphasizing our strengths and implementing strategies to overcome challenges. This approach helped the team navigate the crisis successfully.",
+    "expected_elements": [
+      "leadership in a crisis",
+      "transparent communication",
+      "action plan",
+      "reassuring the team",
+      "strategies implementation",
+      "outcome"
+    ],
+    "feedback": "Outstanding! Your response showcases effective leadership during a crisis. Your transparent communication, clear action plan, reassurance, and strategic implementation contributed to successfully navigating the situation. Well articulated!"
+  },
+  {
+    "id": 20,
+    "question": "Describe a situation where you had to mentor or guide a team member. How did you approach it, and what was the impact?",
+    "response": "I mentored a junior team member by providing guidance on technical challenges, offering constructive feedback, and facilitating skill development. The mentee demonstrated notable improvement, and the team's overall performance benefited from a collaborative learning environment.",
+    "expected_elements": [
+      "mentoring",
+      "guidance",
+      "constructive feedback",
+      "skill development",
+      "impact"
+    ],
+    "feedback": "Impressive! Your response illustrates effective mentoring by providing guidance, offering constructive feedback, and facilitating skill development. The positive impact on the mentee's improvement and the overall team performance is commendable. Well done!"
+  }
+]

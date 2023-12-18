@@ -1,0 +1,42 @@
+[
+    {
+      "domain": "Sales Performance Analysis",
+      "business_requirements": ["Identify top-performing products and regions", "Analyze sales trends over the last year", "Provide insights for optimizing sales strategies"],
+      "technical_requirements": ["SQL", "Tableau", "Statistical Analysis"],
+      "question": "What are some tools you can use to analyze sales trends over the last year?",
+      "model_answer": "To analyze sales trends over the last year, we can use SQL for querying the sales database, Tableau for creating visualizations, and statistical analysis techniques to identify patterns in the data.",
+      "basic_feedback": "Great response! It covers both the technical tools and the analytical approach needed for sales trend analysis."
+    },
+    {
+      "domain": "Customer Segmentation",
+      "business_requirements": ["Understand customer behavior for targeted marketing", "Segment customers based on purchasing patterns", "Recommend personalized promotions for each segment"],
+      "technical_requirements": ["Clustering algorithms", "Data cleaning", "Python"],
+      "question": "How can I implement customer segmentation using Python?",
+      "model_answer": "You can implement customer segmentation in Python by utilizing clustering algorithms, such as K-means. Additionally, data cleaning skills are crucial for handling customer data, and Python is the programming language of choice for implementing machine learning models.",
+      "basic_feedback": "Nice explanation! It provides a clear direction for someone looking to implement customer segmentation using Python."
+    },
+    {
+      "domain": "Inventory Optimization",
+      "business_requirements": ["Minimize stockouts and overstocks", "Analyze inventory turnover and reorder points", "Optimize supply chain efficiency"],
+      "technical_requirements": ["SQL", "Statistical analysis", "Excel/Python"],
+      "question": "What statistical techniques are useful for analyzing inventory turnover?",
+      "model_answer": "For analyzing inventory turnover, you can employ statistical techniques to calculate and interpret key metrics. SQL is useful for querying inventory databases, and tools like Excel or Python can be used to create inventory models.",
+      "basic_feedback": "Well-done! The response effectively outlines the statistical techniques and tools needed for inventory turnover analysis."
+    },
+    {
+      "domain": "Fraud Detection",
+      "business_requirements": ["Identify and prevent fraudulent transactions", "Implement real-time monitoring for unusual patterns", "Minimize financial losses due to fraud"],
+      "technical_requirements": ["SQL", "Data visualization", "Machine learning algorithms"],
+      "question": "How can I use data visualization for fraud detection?",
+      "model_answer": "Data visualization plays a crucial role in fraud detection by helping identify patterns and anomalies. You can use SQL for querying transaction data, and machine learning algorithms, combined with data visualization tools, to monitor and detect unusual patterns in real-time.",
+      "basic_feedback": "Excellent response! It explains the synergy between data visualization, SQL, and machine learning in the context of fraud detection."
+    },
+    {
+      "domain": "Website Traffic Analysis",
+      "business_requirements": ["Understand user behavior on the website", "Optimize website content for user engagement", "Identify sources of high and low traffic"],
+      "technical_requirements": ["Web analytics tools", "Data cleaning", "Data visualization tools"],
+      "question": "Which web analytics tools do you recommend for website traffic analysis?",
+      "model_answer": "For website traffic analysis, popular web analytics tools like Google Analytics can provide valuable insights. Additionally, data cleaning skills and data visualization tools are essential for handling and presenting traffic patterns.",
+      "basic_feedback": "Spot-on! The answer provides specific recommendations for web analytics tools and emphasizes the importance of data handling and visualization."
+    }
+  ]

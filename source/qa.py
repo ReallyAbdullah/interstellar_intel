@@ -79,7 +79,7 @@ qa_pairs = load_qa_pairs()
 
 
 # Streamlit app
-def qam():
+def question_module():
     st.title("Interview Q/A Session ⁉️")
     for qa in qa_pairs:
         for index, pair in qa.iterrows():

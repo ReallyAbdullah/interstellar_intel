@@ -17,7 +17,7 @@ def init_sample(project_id: str, location: str) -> None:
     location (str): The location for the AI Platform resources.
     """
     aiplatform.init(project=project_id, location=location)
-    vertexai.init(project=PROJECT_ID, location=LOCATION)
+    vertexai.init(project=project_id, location=location)
 
 
 def get_model() -> TextGenerationModel:

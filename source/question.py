@@ -1,5 +1,5 @@
 import pandas as pd
-from typing import List
+from typing import List, Dict, Any
 import string
 import json
 import random
@@ -85,6 +85,7 @@ def read_json_to_list_of_dicts():
     >>> for record in data_records:
     >>>     print(record)
     """
+
     print("Reading Database of Case Study Objects...")
     # Open and load the JSON file
     with open("CS_usecases.json", "r") as file:
@@ -187,3 +188,37 @@ def sample_data_by_requirements(
     except Exception as e:
         print(f"An error occurred: {e}")
         return []
+
+
+def read_behavioural_questions(file_path="Behavioral_Q_A.json"):
+    """
+    Reads a list of behavioural questions from a JSON file and returns them as a list of dictionaries.
+
+    Each element in the list is a dictionary containing keys such as 'id', 'question', 'response',
+    'expected_elements', and 'feedback'.
+
+    Parameters:
+    - file_path (str): The path to the JSON file containing the behavioural questions.
+
+    Returns:
+    - List[Dict[str, Any]]: A list of dictionaries, each representing a behavioural question.
+
+    Raises:
+    - FileNotFoundError: If the specified file does not exist.
+    - json.JSONDecodeError: If the file is not a valid JSON file.
+    """
+
+    try:
+        with open(file_path, "r") as file:
+            data = json.load(file)
+            if not isinstance(data, list):
+                raise ValueError("JSON file does not contain a list.")
+            return data
+    except FileNotFoundError:
+        raise FileNotFoundError(f"The file {file_path} was not found.")
+    except json.JSONDecodeError:
+        raise ValueError(
+            "Failed to decode JSON. Please ensure the file contains valid JSON."
+        )
+    except ValueError as ve:
+        raise ve

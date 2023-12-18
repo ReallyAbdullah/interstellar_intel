@@ -7,7 +7,9 @@ File formats used: CSV, JSON
 Diverse Range and Difficulty Levels
 The technical questions within ReX are not merely a compilation but a strategic selection, covering a diverse spectrum of difficulty levels. This ensures that Data Analysts engaging with ReX encounter challenges that align with their proficiency, fostering continuous growth and learning.
 File format: CSV
+
 Example:
+
 ![image](https://github.com/ReallyAbdullah/interstellar_intel/assets/40705538/f6a1b443-1422-4879-81ea-bc1abddcabde)
 
 
@@ -17,7 +19,8 @@ Case studies within ReX are meticulously crafted to simulate real-world scenario
 File format: JSON
 
 Example:
-![image](https://github.com/ReallyAbdullah/interstellar_intel/assets/40705538/ed9dd7c4-5def-431b-bf0d-06d7edadbbaa)
+
+![image](https://github.com/ReallyAbdullah/interstellar_intel/assets/40705538/8202b889-b286-4224-9c54-0d6ea6d18d1a)
 
 
 ## Data Analysis Concepts
@@ -44,5 +47,5 @@ File format: JSON
 
 Example:
 
-![image](https://github.com/ReallyAbdullah/interstellar_intel/assets/40705538/1d220f10-fcad-4c53-b2c7-b274fbdd50a2)
+![image](https://github.com/ReallyAbdullah/interstellar_intel/assets/40705538/fdcd8730-9406-4347-9505-1660d4f8ba49)
 

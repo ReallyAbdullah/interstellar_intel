@@ -37,6 +37,7 @@ Thanks to the dedicated development team:
 - **Muhammad Abdullah**
 - **Habiba Alaa**
 - **Yomna Eisa**
+
 For their contributions to the success of Rex-DA.
 
 Explore Rex-DA now and revolutionize your data analyst interview preparation journey! 🚀

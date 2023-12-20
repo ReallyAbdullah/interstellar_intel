@@ -33,7 +33,7 @@ Rex-DA's journey doesn't end here. Future plans involve refining the platform ba
 
 ## Acknowledgments
 Thanks to the dedicated development team:
-- - **Youssef Khattab**
+- **Youssef Khattab**
 - **Muhammad Abdullah**
 - **Habiba Alaa**
 - **Yomna Eisa**

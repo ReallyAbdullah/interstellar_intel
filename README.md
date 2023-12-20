@@ -1,6 +1,6 @@
 # Rex DA
 
-![Uploading Rex_ex4.jpg…]()
+![Rex_ex4](https://github.com/ReallyAbdullah/interstellar_intel/assets/40705538/f185607c-8a40-4740-9e12-500339cc0e76)
 
 ## Overview
 Our AI-driven interview preparation solution is poised to revolutionize the landscape of interview preparation for data analysts. By integrating advanced AI technologies with a user-centric design, ReX is tailored to provide a cutting-edge learning experience.

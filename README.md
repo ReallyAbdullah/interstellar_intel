@@ -1,4 +1,4 @@
-# interstellar_intel
+# Rex DA
 ## Overview
 Our AI-driven interview preparation solution is poised to revolutionize the landscape of interview preparation for data analysts. By integrating advanced AI technologies with a user-centric design, ReX is tailored to provide a cutting-edge learning experience.
 

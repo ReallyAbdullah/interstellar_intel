@@ -1,7 +1,5 @@
 # Rex DA
 
-![Rex_ex4](https://github.com/ReallyAbdullah/interstellar_intel/assets/40705538/f185607c-8a40-4740-9e12-500339cc0e76)
-
 ![Demo](https://github.com/ReallyAbdullah/interstellar_intel/blob/main/images/Demo.png)
 
 ## Overview

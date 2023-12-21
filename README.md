@@ -62,13 +62,13 @@ Explore Rex-DA now and revolutionize your data analyst interview preparation jou
 - [License](#license)
 - [Contact](#contact)
 
-#installation
+## Installation
 
-## Docker Installation
+### Docker Installation
 
 Ensure you have Docker installed on your machine. If not, follow the instructions on the official [Docker website](https://www.docker.com/get-started) to install Docker.
 
-## Build the Docker Image
+### Build the Docker Image
 
 Run the following commands in your terminal to build the Docker image:
 
@@ -76,7 +76,7 @@ Run the following commands in your terminal to build the Docker image:
 docker build -t your_image_name .
 ```
 
-## Manual Installation
+### Manual Installation
 
 Install the required Python packages by running:
 

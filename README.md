@@ -100,6 +100,10 @@ streamlit
 pdfkit
 ```
 
+### Link to Deployed Instance
+
+[Demo link](https://rex-assistant-qnggg3zpua-ez.a.run.app/)
+
 ### Lincense
 
 [MIT Lincense](https://github.com/ReallyAbdullah/interstellar_intel/tree/main#MIT-1-ov-file)

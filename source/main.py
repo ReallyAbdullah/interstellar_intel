@@ -1,8 +1,8 @@
 import streamlit as st
-from qa import question_module  # Import the app1 function
+from qna import question_module  # Import the app1 function
 from caseStudy import cs  # Import the app2 function
 from concept_chat import concept
-from behavQA import bq
+from behavQA import behavq
 
 # Define the navigation structure
 st.sidebar.title("Navigation")
@@ -19,4 +19,4 @@ elif app_choice == "Case Study":
 elif app_choice == "Concept Explaination":
     concept()
 elif app_choice == "Behavioural Questions":
-    bq()
+    behavq()

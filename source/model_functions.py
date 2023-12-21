@@ -22,30 +22,37 @@ def create_qa_prompt(
     """
 
     prompt = f"""
-    As an Expert Data Analyst Interview Preparation Assistant
-    Evaluate the following user response to a question and provide personalized feedback for improvement.
-    Incase the user couldn't answer, act motivational and say "Let me help you understand this " and then provide a step by step explaination of the solution for maximum undestanding.
+    As an Expert Data Analyst Interview Preparation Assistant, your task is to evaluate and provide tailored feedback on a user's response to a data analysis question. Ensure your feedback is constructive, insightful, and aids in deepening the user's understanding of the subject. In cases where the user struggles to answer, adopt a motivational approach, guiding them through the solution with clear explanations.
 
-    Question: {question}
-    Topic: {topic}
+    **Interview Question Context**:
+    - Question: {question}
+    - Topic: {topic}
+    - Correct Answer: {answer}
+    - User's Answer: {user_answer}
 
-    Correct Answer: {answer}
+    **Your Analysis and Feedback Task**:
+    1. **Assessment of User's Answer**:
+    - Determine if the user's answer is Correct, Incorrect, or Partially Correct.
+    - Elaborate on how the user's response aligns with these categories, citing specific examples or points from their answer.
 
-    User's Answer: {user_answer}
+    2. **Detailed Comparative Analysis**:
+    - Compare the user's answer with the correct answer.
+    - Identify specific areas where the user's understanding appears limited or inaccurate.
+    - Highlight key differences in approach, methodology, or content between the user's response and the correct answer.
 
-    Feedback Request: Please analyze the user's answer in comparison to the correct answer. Highlight any 
-    inaccuracies, misunderstandings, or areas of improvement in the user's response. Provide constructive 
-    feedback and suggestions on how the user can deepen their understanding of the topic and improve their 
-    approach to answering similar questions.
+    3. **Constructive Feedback for Improvement**:
+    - Offer clear, actionable advice on how the user can improve their understanding of the topic.
+    - Suggest study materials, resources, or practice methods relevant to the topic.
+    - If the question involves technical skills (like coding or SQL), include a relevant code snippet or example that aligns with best practices in data analysis.
 
-    Strictly follow the following Feedback Structure:
-    Is answer Correct/Incorrect/Partially Correct
-    How is the answer Correct/Incorrect/Partially correct
-    What can be done to improve the response
-    Incase of a question involving code/sql provide useful code snippet for better understanding
-    Provide a model answer for maximum understanding
+    4. **Motivational Guidance**:
+    - If the user's response indicates a lack of understanding, start with a motivational statement: "Let me help you understand this..."
+    - Provide a step-by-step explanation of the solution, ensuring it's easy to follow and comprehend.
 
-    Final Considerations: Generate the response with Markdown.
+    5. **Model Answer**:
+    - Conclude with a model answer that fully addresses the interview question, incorporating all necessary elements for a comprehensive and accurate response.
+
+    **Response Format**: Use Markdown for clear and organized presentation of your feedback.
     """
 
     return prompt
@@ -77,34 +84,32 @@ def create_cs_prompt(
     """
 
     prompt = f"""
-    Act an Expert Data Analyst Interview Preparation Assistant
+    **Case Study Context**:
+    - Domain: {domain}
+    - Question: {question}
+    - Business Requirements: {business_requirements}
+    - Technical Requirements: {technical_requirements}
 
-    The following is a case study provided to a potential Data Analyst Candidate:
+    **User's Response**:
+    - {user_answer}
 
-    Domiain: {domain}
-    Question: {question}
-    Business Requirements: {business_requirements}
-    Technical Requirements: {technical_requirements}
+    **Task for Data Analyst Interview Assistant**:
+    - Analyze the user's response in the context of the provided case study.
+    - Determine the accuracy and completeness of the user's answer based on the domain, business, and technical requirements.
+    - Offer a detailed analysis that:
+    - Identifies whether the answer is Correct/Incorrect/Partially Correct.
+    - Elaborates on how and why the answer fits into one of these categories.
+    - Provides specific insights into any gaps or inaccuracies in the user's understanding or approach.
+    - Suggests clear and actionable steps for improvement, including tips, methodologies, or concepts the user should focus on.
+    - In case of technical questions (involving code or SQL), include relevant code snippets or examples that demonstrate best practices or correct methodologies.
+    - Conclude with a model answer that exemplifies an ideal response to the case study question, incorporating all necessary elements of a comprehensive and correct answer.
 
-    Simplified Example of a Correct Answer: {model_answer}
-    Simplified Example Feedback for correct answer: {basic_feedback}
-
-    User's Answer: {user_answer}
-
-    Evaluate the user's response to the case study question given the context of the Case study domain, business requirements and technical requirements.
-    Incase the user couldn't answer, act motivational and start you response with "Let me help you understand this " and then provide a step by step explaination of the solution for the user to understant you thought process.
-
-    Please analyze the user's answer in comparison to the correct answer. Highlight any 
-    inaccuracies, misunderstandings, or areas of improvement in the user's response. Provide constructive 
-    feedback and suggestions on how the user can deepen their understanding of the topic and improve their 
-    approach to answering similar questions.
-
-    Strictly follow the following Feedback Structure:
-    Is the answer Correct/Incorrect/Partially correct
-    How is the answer Correct/Incorrect/Partially correct
-    What can be done to improve the response
-    Incase of a question involving code/sql provide useful code snippet for better understanding
-    Provide a model answer for maximum understanding
+    **Data Analyst Interview Assistant Response Format**:
+    - Begin with an overall assessment (Correct/Incorrect/Partially Correct).
+    - Follow with a point-by-point comparison between the user's response and what an ideal response should entail.
+    - Include practical advice for improvement and learning.
+    - Provide additional resources or references if applicable.
+    - Conclude with a model answer for the user to study and learn from.
     """
 
     return prompt
@@ -155,6 +160,7 @@ def create_bq_prompt(
     Strictly follow the following Feedback Structure:
     Is the answer Poor/Mediocre/Good
     How is the answer Poor/Mediocre/Good
+    3 Detailed Hypothetical examples of a Good Answer
     """
 
     return prompt

@@ -212,11 +212,19 @@ def construct_star_chain():
     return final_chain
 
 
-def run_star_chain(response, question, expected_elements, chain):
-    inputs = {
-        "input": response,
-        "question": question,
-        "expected_elements": expected_elements,
-    }
-    output = chain.invoke(inputs)
-    return output
+def run_star_chain(response, question, expected_elements, chain, analysis):
+    if (
+        "Poor" in analysis
+        or "Mediocre" in analysis
+        or "poor" in analysis
+        or "mediocre" in analysis
+    ):
+        return "Follow the guidlines above to write an answer with enough information to be analysed."
+    else:
+        inputs = {
+            "input": response,
+            "question": question,
+            "expected_elements": expected_elements,
+        }
+        output = chain.invoke(inputs)
+        return output

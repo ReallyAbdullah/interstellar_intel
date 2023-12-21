@@ -59,7 +59,7 @@ cs_obj = load_cs_objs()
 def cs():
     st.title("Interview Case Study Session ⁉️")
     for index, cs in enumerate(cs_obj):
-        cs_key = f"response_{index}"  # Unique key for each case study
+        cs_key = f"C response_{index}"  # Unique key for each case study
         # Initialize session state for each question
         if cs_key not in st.session_state:
             st.session_state[cs_key] = None

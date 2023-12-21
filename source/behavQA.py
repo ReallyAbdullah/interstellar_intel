@@ -57,10 +57,10 @@ star_chain = get_chain()
 
 
 # Streamlit app
-def bq():
+def behavq():
     st.title("Interview Behavioural Question and STAR Analysis Session ⁉️")
     for index, bq in enumerate(bq_obj):
-        bq_key = f"response_{index}"  # Unique key for each case study
+        bq_key = f"B response_{index}"  # Unique key for each case study
         # Initialize session state for each question
         if bq_key not in st.session_state:
             st.session_state[bq_key] = None
@@ -71,23 +71,25 @@ def bq():
 
         if user_response and st.session_state[bq_key] is None:
             # Corrected call to ask_llm_model
-            ans = (
-                ask_llm_model(
-                    bq["question"],
-                    bq["response"],
-                    ", ".join(bq["expected_elements"]),
-                    bq["feedback"],
-                    user_response,
-                )
+            analysis = ask_llm_model(
+                bq["question"],
+                bq["response"],
+                ", ".join(bq["expected_elements"]),
+                bq["feedback"],
+                user_response,
+            )
+            final_response = (
+                analysis
                 + "\n*STAR Analysis*\n"
                 + run_star_chain(
                     user_response,
                     bq["question"],
                     ", ".join(bq["expected_elements"]),
                     star_chain,
+                    analysis,
                 )
             )
-            st.session_state[bq_key] = ans
+            st.session_state[bq_key] = final_response
 
         if st.session_state[bq_key]:
             st.write("🤖 Interview Assistant:")

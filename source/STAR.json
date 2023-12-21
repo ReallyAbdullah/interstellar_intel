@@ -1,0 +1,50 @@
+[
+  {
+    "topic": "Project Deadline Challenge",
+    "question": "Can you tell us about a time when you were working on an important project and faced an unexpected issue that threatened to delay the deadline? How did you manage the situation?",
+    "situation": "Description of the important project and the unexpected issue",
+    "task": "Explanation of the task at hand when the issue occurred",
+    "action": "Specific actions taken to manage and resolve the issue",
+    "result": "Outcome of the actions, including how the deadline was met or adjusted"
+  },
+  {
+    "topic": "Conflict Resolution",
+    "question": "Describe a situation where you had to handle a conflict within your team. What was your role in resolving the disagreement, and what was the outcome?",
+    "situation": "Details of the conflict within the team",
+    "task": "Your specific role and responsibilities in resolving the conflict",
+    "action": "Actions you took to mediate and resolve the disagreement",
+    "result": "Resolution of the conflict and its impact on the team dynamics"
+  },
+  {
+    "topic": "Leading a New Initiative",
+    "question": "Have you ever had to lead a new initiative or project that was outside your regular responsibilities? Please share the challenges you faced and how you overcame them.",
+    "situation": "Description of the new initiative or project",
+    "task": "Challenges encountered while leading outside regular responsibilities",
+    "action": "Strategies and actions implemented to overcome the challenges",
+    "result": "Outcome of the initiative and personal or organizational learnings"
+  },
+  {
+    "topic": "Customer Service Excellence",
+    "question": "Can you give an example of a time when you dealt with a particularly difficult customer? How did you handle their concerns and what was the result of your interaction?",
+    "situation": "Context of the encounter with the difficult customer",
+    "task": "Nature of the customer's concerns or complaints",
+    "action": "Specific steps taken to address the customer's concerns",
+    "result": "Resolution of the situation and any feedback received"
+  },
+  {
+    "topic": "Implementing a Cost-Saving Measure",
+    "question": "Tell us about a time when you had to implement cost-saving measures in your department. What approach did you take and what was the impact on your department's budget and performance?",
+    "situation": "Context requiring cost-saving measures",
+    "task": "Task of identifying and implementing cost-saving strategies",
+    "action": "Detailed actions taken for cost reduction",
+    "result": "Effect on the department’s budget and overall performance"
+  },
+  {
+    "topic": "Adapting to Rapid Changes",
+    "question": "Describe an instance where your organization underwent a major strategic change that affected your project. How did you adapt your project plan, and what were the outcomes?",
+    "situation": "Description of the organizational change and its impact on the project",
+    "task": "Task of adapting the project plan to align with the new strategy",
+    "action": "Actions taken to modify and communicate the new plan",
+    "result": "Outcome of the changes, including successes or challenges"
+  }
+]

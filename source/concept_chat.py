@@ -6,6 +6,7 @@ import json
 import markdown
 import pdfkit
 import os
+import subprocess
 
 USER = "user"
 ASSISTANT = "ai"
@@ -46,13 +47,21 @@ def savePdf(res, code, concept):
     res (str), code (str): The Markdown text to convert.
     concept (str): The path to the output PDF file.
     """
+    executable = (
+        subprocess.run(["which", "wkhtmltopdf"], stdout=subprocess.PIPE)
+        .stdout.decode()
+        .strip()
+    )
+    config = pdfkit.configuration(wkhtmltopdf=bytes(executable, "utf-8"))
+
     # Convert Markdown to HTML
     html_text = markdown.markdown(res)
     html_text += "\n"
     html_text += markdown.markdown(code)
 
     # Convert HTML to PDF
-    pdfkit.from_string(html_text, concept.replace(" ", "") + ".pdf")
+    pdf = pdfkit.from_string(html_text, configuration=config)
+    return pdf
 
 
 # Function to sending data to LLM model and recieve its response
@@ -109,6 +118,11 @@ def concept():
         cod += response
         st.session_state[MESSAGES].append(Message(actor=CODE, payload=response))
         st.chat_message(name="coder", avatar="💻").markdown(response)
-        st.button(
-            "Download Guide as PDF ⬇️", on_click=savePdf, args=[res, cod, concept]
+        # st.button(
+        #     "Download Guide as PDF ⬇️", on_click=savePdf, args=[res, cod, concept]
+        # )
+        st.download_button(
+            "Download Guide as PDF ⬇️",
+            savePdf(res, cod, concept),
+            file_name=concept.replace(" ", "") + ".pdf",
         )

@@ -58,9 +58,8 @@ Explore Rex-DA now and revolutionize your data analyst interview preparation jou
 - [Usage](#usage)
 - [Documentation](#documentation)
 - [Contributing](#contributing)
-- [Testing](#testing)
+- [Testing](#Demo)
 - [License](#license)
-- [Contact](#contact)
 
 ## Installation
 
@@ -100,10 +99,15 @@ streamlit
 pdfkit
 ```
 
-### Link to Deployed Instance
+## Link to Deployed Instance
 
 [Demo link](https://rex-assistant-qnggg3zpua-ez.a.run.app/)
 
-### Lincense
+
+## Documentation
+
+[Documentation Report](https://docs.google.com/document/d/10xt6W2y2tYonpu4BgBNkXbAW_8nMUdZORC7nLTfmsB4/edit?usp=sharing)
+
+## Lincense
 
 [MIT Lincense](https://github.com/ReallyAbdullah/interstellar_intel/tree/main#MIT-1-ov-file)

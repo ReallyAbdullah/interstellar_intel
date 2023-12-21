@@ -58,7 +58,7 @@ Explore Rex-DA now and revolutionize your data analyst interview preparation jou
 - [Usage](#usage)
 - [Documentation](#documentation)
 - [Contributing](#contributing)
-- [Testing](#Link to Deployed Instance)
+- [Testing](#testing)
 - [License](#license)
 
 ## Installation
@@ -99,7 +99,7 @@ streamlit
 pdfkit
 ```
 
-## Link to Deployed Instance
+## Testing
 
 [Demo link](https://rex-assistant-qnggg3zpua-ez.a.run.app/)
 

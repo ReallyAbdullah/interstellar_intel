@@ -58,7 +58,7 @@ Explore Rex-DA now and revolutionize your data analyst interview preparation jou
 - [Usage](#usage)
 - [Documentation](#documentation)
 - [Contributing](#contributing)
-- [Testing](#Demo)
+- [Testing](#Link to Deployed Instance)
 - [License](#license)
 
 ## Installation
